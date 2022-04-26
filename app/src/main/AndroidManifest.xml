@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trabalhopdm">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="TextMixer"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TrabalhoPDM">
+        <activity
+            android:name=".Explain"
+            android:exported="false" />
+        <activity
+            android:name=".textResult"
+            android:exported="false" />
+        <activity
+            android:name=".Texts"
+            android:exported="false" />
+        <activity
+            android:name=".CustomGame"
+            android:exported="true" />
+        <activity
+            android:name=".CustomGamePregame"
+            android:exported="true" />
+        <activity
+            android:name=".MainPanel"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".gameResult"
+            android:exported="true" />
+        <activity
+            android:name=".Jogo"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/view2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/button"
+        android:text="Jogar"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textViewJogadores"
+        android:layout_width="152dp"
+        android:layout_height="26dp"
+        android:layout_below="@+id/buttonPlay"
+        android:layout_alignStart="@+id/view2"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="18dp"
+        android:layout_toStartOf="@+id/editNumberJogadores"
+        android:text="Número de jogadores :"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editNumberRondas"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlay" />
+
+    <EditText
+        android:id="@+id/editNumberJogadores"
+        android:layout_width="72dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/buttonPlay"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/text_box"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/editNumberRondas"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewRondas"
+        android:layout_width="130dp"
+        android:layout_height="22dp"
+        android:layout_below="@+id/textViewJogadores"
+        android:layout_alignStart="@+id/view2"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="18dp"
+        android:layout_toStartOf="@+id/editNumberRondas"
+        android:text="Número de rondas :"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editNumberJogadores"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewJogadores" />
+
+    <EditText
+        android:id="@+id/editNumberRondas"
+        android:layout_width="72dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/editNumberJogadores"
+        android:layout_alignEnd="@+id/view2"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/text_box"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlay"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
